@@ -22,7 +22,7 @@ AUX_LOSS_COEF = 0.5
 
 BATCH_SIZE = 256
 LEARNING_RATE = 1e-4
-DROP_RATE = 0.2
+DROP_RATE = 0.2   
 
 GLUE_PROB = 0.3 # Probability of glueing augmentation 
 INTERPOLATION_PROB = 0.2 # Probability of data of DATA_PATH_2

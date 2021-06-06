@@ -14,15 +14,8 @@ Here, we provide our basic setup.
 - matplotlib 3.4.1
 - tqdm 
 
-## Config
-You can change some values in config.py in both models. Here's some information for the values of config.py
-- FEATURE_DIM: Dimension of features. 4096 for TSN features, 6400 for SF_TSN features, and 6912 for SF_TSN_TSP features.
-- FEATURE_DIM_1: Dimension of SF features. 2304
-- FEATURE_DIM_2: Dimension of TSP of TSP_TSN features. 4096 for SF_TSN features, and 4608 for SF_TSN_TSP features
+## Implementation
+You can change some values in config.py in both models. 
 
-\* DO NOT CHANGE
-- FEATURE_LEN
-- TIME_UNIT
-
-## Train
+### Train
 For both 
