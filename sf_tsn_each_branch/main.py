@@ -242,8 +242,8 @@ if __name__ == '__main__':
                     pickle.dump(test_dict, f)
                 with open(f'prob_results/test_prob_' + description + str(max_value)[2:6] + '.pkl', 'wb') as f:
                     pickle.dump(test_prob_dict, f)
-                torch.save(network_sf, f'models/model_sf_' + description + str(max_value)[2:6] + '.pt')
-                torch.save(network_tsn, f'models/model_tsn_' + description + str(max_value)[2:6] + '.pt')
+                torch.save(network_sf, f'{MODEL_SAVE_PATH}/model_sf_' + description + str(max_value)[2:6] + '.pt')
+                torch.save(network_tsn, f'{MODEL_SAVE_PATH}/model_tsn_' + description + str(max_value)[2:6] + '.pt')
 
         
 

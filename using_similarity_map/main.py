@@ -66,7 +66,6 @@ if __name__ == '__main__':
     criterion = nn.BCEWithLogitsLoss()
     basic_mask = get_basic_mask(gap=GAP)
     loss_list = []
-    rand_prob = RANDOM_CHOICE_PROB_START
 
     for fold in range(5):
         network = nn.DataParallel(SimNet()).to(device)
@@ -108,15 +107,11 @@ if __name__ == '__main__':
                 shot_boundaries = shot_boundaries.to(device)
                 whole_boundaries = whole_boundaries.to(device)
                 n = random.randint(0,9999)
-                random_flag = True if n < 10000*rand_prob else False
 
                 tsm_out, direct_out, event_tsm, shot_tsm, whole_tsm = network(feature)
 
-                if random_flag:
-                    answer_idx = torch.randint(0, 5, (len(tsm_out),))
-                else:
-                    tmp = tsm_out.unsqueeze(1).repeat(1, 5, 1)
-                    answer_idx = torch.argmin(torch.mean(_criterion(tmp, whole_boundaries), dim=-1), dim=1)
+                answer_idx = torch.randint(0, 5, (len(tsm_out),))
+                
                 event_boundaries = event_boundaries[range(len(answer_idx)), answer_idx, :]
                 shot_boundaries = shot_boundaries[range(len(answer_idx)), answer_idx, :]
                 whole_boundaries = whole_boundaries[range(len(answer_idx)), answer_idx, :]
@@ -170,10 +165,6 @@ if __name__ == '__main__':
                 # network.opt.step()
                 network.module.opt.step()
                 # epoch_loss_list.append(loss.detach().cpu().numpy())
-
-            rand_prob += RANDOM_CHOICE_PROB_DELTA
-            if rand_prob <= RANDOM_CHOICE_PROB_END:
-                rand_prob = RANDOM_CHOICE_PROB_END
             
             network.eval()
             
