@@ -14,6 +14,16 @@ Here, we provide our basic setup.
 - matplotlib 3.4.1
 - tqdm 
 
+## Video Features
+You can downlaod our video feuatures [here]().
+
+You may locate feature data in 'data' folder of this repository.
+
+## Materials 
+You can download materials [here]().
+
+You may locate file_list_5fold.pkl in each model's folder, and the model files in folder 'models' of each model.
+
 ## Implementation
 You can change some values in config.py in both models. 
 
