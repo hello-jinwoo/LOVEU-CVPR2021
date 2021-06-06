@@ -46,6 +46,7 @@ python validate.py --model model_main_fold_0_s_0.1_SF_TSP.pt --fold 0 --sigma 0.
 ```
 and you can get validation score of *f1: 0.8132, precision: 0.8023, recall: 0.8245
 
+<hr>
 
 - $MODEL_NAME_2
 ```
