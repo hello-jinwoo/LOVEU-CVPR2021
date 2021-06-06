@@ -28,4 +28,26 @@ You may locate file_list_5fold.pkl in each model's folder, and the model files i
 You can change some values in config.py in both models. 
 
 ### Train
-For both 
+For both models, you can train model just using below code.
+```
+python main.py
+```
+
+### Validate
+If you want to validate models using saved model, follow below.
+
+- $MODEL_NAME_1
+```
+python validate.py --model $MODEL_NAME --fold $FOLD_NUM --sigma $SIGMA_VALUE
+```
+If you follow this implementation using the model we provide, 
+```
+python validate.py --model model_main_fold_0_s_0.1_SF_TSP.pt --fold 0 --sigma 0.1
+```
+and you can get validation score of *f1: 0.8132, precision: 0.8023, recall: 0.8245
+
+
+- $MODEL_NAME_2
+```
+
+```
