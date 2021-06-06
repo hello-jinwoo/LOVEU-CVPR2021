@@ -1,0 +1,38 @@
+FILE_LIST = 'file_list_5fold.pkl'
+ANNOTATION_PATH = 'k400_all.pkl'
+TEST_ANNOTATION_PATH = 'test_len.json'
+DATA_PATH = '/workspace/LOVEU/data/LOVEU_both_hr_padded/train_val/'
+DATA_PATH_2 = '/workspace/LOVEU/data/LOVEU_both_hr/train_val/'
+TEST_DATA_PATH = '/workspace/LOVEU/data/LOVEU_both_hr_padded/test/'
+PRED_PATH = 'k400_pred.pkl'
+VISUAL_DATA_PATH = './visualizing/'
+MODEL_SAVE_PATH = './models/'
+
+DEVICE = 'cuda:0'
+
+FEATURE_DIM = 2304 + 4096
+FEATURE_DIM_1 = 2304
+FEATURE_DIM_2 = 4096
+FEATURE_LEN = 40
+TIME_UNIT = 0.25
+
+ENCODER_HIDDEN = 1024
+DECODER_HIDDEN = 128
+AUX_LOSS_COEF = 0.5
+
+BATCH_SIZE = 256
+LEARNING_RATE = 1e-4
+DROP_RATE = 0.2
+
+GLUE_PROB = 0.3
+INTERPOLATION_PROB = 0.2
+
+VAL_MODE = 'MULTI'
+VAL_VIDEOS = ["hlm7ShpS1z0", "jw1kPjGu1YE", "u959kyRLWdQ", "z1-T4zHXvSY", "z1-U0uYFY3Q"]
+
+THRESHOLD = 0.1 
+SIGMA_LIST = [-1, 0.4] 
+TEST_THRESHOLD = 0.808
+GOAL_SCORE = 0.815
+
+PATIENCE = 10
