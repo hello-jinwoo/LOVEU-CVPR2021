@@ -22,7 +22,7 @@ You may locate feature data in 'data' folder of this repository.
 ## Materials 
 You can download materials [here]().
 
-You may locate file_list_5fold.pkl in each model's folder, and the model files in folder 'models' of each model.
+You may locate file_list_5fold.pkl in each model's folder, model files in folder 'models' of each model folder, and prob_result files in folder 'prob_results' of each model folder.
 
 ## Implementation
 You can change some values in config.py in both models. 
@@ -42,7 +42,7 @@ python validate.py --model $MODEL_NAME --fold $FOLD_NUM --sigma $SIGMA_VALUE
 ```
 If you follow this implementation using the model we provide, 
 ```
-python validate.py --model model_main_fold_0_s_0.1_SF_TSP.pt --fold 0 --sigma 0.1
+python validate.py --model models/model_main_fold_0_s_0.1_SF_TSP.pt --fold 0 --sigma 0.1
 ```
 and you can get validation score of *f1: 0.8132, precision: 0.8023, recall: 0.8245
 
@@ -50,5 +50,14 @@ and you can get validation score of *f1: 0.8132, precision: 0.8023, recall: 0.82
 
 - $MODEL_NAME_2
 ```
-
+python validate.py --model_sf $MODEL_SF_NAME --model_tsn $MODEL_TSN_NAME --sigma $SIGMA_VALUE --fold $FOLD_NUM
 ```
+If you follow this implementation using the model we provide, 
+```
+python validate.py --model_sf models/model_sf_fold_4_s_-1_SF_TSP.pt --model_tsn models/model_tsn_kim_fold_4_s_-1_SF_TSP.pt --sigma -1 --fold 4
+```
+and you can get validation score of *f1: 0.8119, precision: 0.7921, recall: 0.8327
+
+
+### Test with ensemble
+
