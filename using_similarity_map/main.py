@@ -164,7 +164,7 @@ if __name__ == '__main__':
                 network.module.alpha.grad *= 1000
                 # network.opt.step()
                 network.module.opt.step()
-                # epoch_loss_list.append(loss.detach().cpu().numpy())
+                epoch_loss_list.append(loss.detach().cpu().numpy())
             
             network.eval()
             
