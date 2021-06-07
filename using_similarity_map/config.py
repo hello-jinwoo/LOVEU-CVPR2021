@@ -1,8 +1,8 @@
-FILE_LIST = 'file_list_5fold.pkl'
+FILE_LIST = 'file_list_5fold_main.pkl'
 ANNOTATION_PATH = 'k400_all.pkl'
 TEST_ANNOTATION_PATH = 'test_len.json'
-DATA_PATH = '../data/LOVEU_both_hr_padded/train_val/'
-DATA_PATH_2 = '../data/LOVEU_both_hr/train_val/'
+DATA_PATH = '../data/SF_TSN_padded/train_val/'
+DATA_PATH_2 = '../data/SF_TSN_interpolated/train_val/'
 TEST_DATA_PATH = '../data/LOVEU_both_hr_padded/test/'
 PRED_PATH = 'k400_pred.pkl'
 VISUAL_DATA_PATH = './visualizing/'
@@ -15,7 +15,7 @@ FEATURE_DIM = 2304 + 4096 # 6400 for SF_TSN, 6912 for SF_TSN_TSP
 FEATURE_LEN = 40 # DO NOT CHANGE
 TIME_UNIT = 0.25 # DO NOT CHANGE
 
-GAP = 16 # 
+GAP = 16 # VALID 
 CHANNEL_NUM = 4 
 ENCODER_HIDDEN = 512 
 DECODER_HIDDEN = 128
@@ -41,3 +41,5 @@ TEST_THRESHOLD = 0.808
 GOAL_SCORE = 0.815 # Train ends when validation score gets here
 
 PATIENCE = 10 # Patience for early stopping
+
+NUM_WORKERS = 0

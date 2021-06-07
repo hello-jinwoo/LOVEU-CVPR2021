@@ -1,9 +1,9 @@
-FILE_LIST = 'file_list_5fold.pkl'
+FILE_LIST = 'file_list_5fold_simple.pkl'
 ANNOTATION_PATH = 'k400_all.pkl'
 TEST_ANNOTATION_PATH = 'test_len.json'
-DATA_PATH = '../data/LOVEU_both_hr_padded/train_val/'
-DATA_PATH_2 = '../data/LOVEU_both_hr/train_val/'
-TEST_DATA_PATH = '../data/LOVEU_both_hr_padded/test/'
+DATA_PATH = '../data/SF_TSN_padded/train_val/'
+DATA_PATH_2 = '../data/SF_TSN_interpolated/train_val/'
+TEST_DATA_PATH = '../data/SF_TSN_padded/test/'
 PRED_PATH = 'k400_pred.pkl' 
 MODEL_SAVE_PATH = './models/'
 
@@ -35,3 +35,5 @@ TEST_THRESHOLD = 0.808
 GOAL_SCORE = 0.815 # Train ends when validation score gets here
 
 PATIENCE = 10 # Patience for early stopping
+
+NUM_WORKERS = 0
