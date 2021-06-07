@@ -22,7 +22,7 @@ You may locate feature data in 'data' folder of this repository.
 ## Materials 
 You can download materials [here]().
 
-You may locate file_list_5fold.pkl in each model's folder, model files in folder 'models' of each model folder, and prob_result files in folder 'prob_results' of each model folder.
+You may locate *file_list_5fold.pkl* in each model's folder, *model files (.pt)* in folder 'models' of each model folder, and *prob_result files (.pkl)* in folder 'prob_results' of ensemble folder.
 
 ## Implementation
 You can change some values in config.py in both models. 
@@ -60,4 +60,15 @@ and you can get validation score of *f1: 0.8119, precision: 0.7921, recall: 0.83
 
 
 ### Test with ensemble
+We predict the result by ensembling models from different folds(0~4) and model architecture(*main* and *simple*).
+
+We save a probability score for each model and use it to produce final prediction.
+
+With the probability scores, you can predict the final event boundary following below code in ensemble folder.
+```
+python test.py --ver $VERSION_NAME_YOU_WANT
+```
+
+Then, there will be the test result in results folder.
+
 
