@@ -44,7 +44,7 @@ If you follow this implementation using the model we provide,
 ```
 python validate.py --model models/model_main_fold_0_s_0.1_SF_TSP.pt --fold 0 --sigma 0.1
 ```
-and you can get validation score of *f1: 0.8132, precision: 0.8023, recall: 0.8245
+and you can get validation score of *f1: 0.8132, precision: 0.8023, recall: 0.8245*
 
 <hr>
 
@@ -56,7 +56,7 @@ If you follow this implementation using the model we provide,
 ```
 python validate.py --model_sf models/model_sf_fold_4_s_-1_SF_TSP.pt --model_tsn models/model_tsn_kim_fold_4_s_-1_SF_TSP.pt --sigma -1 --fold 4
 ```
-and you can get validation score of *f1: 0.8119, precision: 0.7921, recall: 0.8327
+and you can get validation score of *f1: 0.8119, precision: 0.7921, recall: 0.8327*
 
 
 ### Test with ensemble
