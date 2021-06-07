@@ -20,7 +20,7 @@ You can downlaod our video feuatures [here]().
 You may locate feature data in 'data' folder of this repository.
 
 ## Materials 
-You can download materials [here]().
+You can download materials [here](https://drive.google.com/drive/folders/1Z5rFZlRIjBNDcys-Y1we9nXOB1Al2x3y?usp=sharing).
 
 You may locate *file_list_5fold.pkl* in each model's folder, *model files (.pt)* in folder 'models' of each model folder, and *prob_result files (.pkl)* in folder 'prob_results' of ensemble folder.
 
