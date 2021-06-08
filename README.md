@@ -2,7 +2,7 @@
 
 This is the code for track 1 of competition LOVEU@CVPR2021.
 
-We have two main models. One of them is *main* using similarity map, and the other one is *simple* using comparably simple networks.(transformer, RNN, and CNN)
+We have two main models. One of them is *main (using_similarity_map)* using similarity map, and the other one is *simple(sf_tsn_each_branch)* using comparably simple networks.(transformer, RNN, and CNN)
 
 We provide the simple way to implement(train, validate, test using ensemble) our code below :)
 
