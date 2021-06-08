@@ -49,7 +49,7 @@ class CustomEncoder(nn.Module):
 
         return x
 
-
+# Temporary name for the network
 class SJNET(nn.Module):
     def __init__(self, encoder_hidden=ENCODER_HIDDEN, decoder_hidden=DECODER_HIDDEN):
         super().__init__()
@@ -91,7 +91,7 @@ class SJNET(nn.Module):
 
         return x
 
-
+# Temporary name for the network
 class JWNET(nn.Module):
     def __init__(self, in_channel=FEATURE_DIM_1, encoder_hidden=ENCODER_HIDDEN, decoder_hidden=DECODER_HIDDEN):
         super().__init__()

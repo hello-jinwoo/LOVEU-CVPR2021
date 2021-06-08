@@ -6,7 +6,7 @@ import torch.nn as nn
 import numpy as np
 import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
-from network import SimNet
+from network import SJNET
 from validation import validate
 from dataset import Kinetics_GEBD_train, Kinetics_GEBD_validation, Kinetics_GEBD_test
 from tqdm import tqdm
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     loss_list = []
 
     for fold in range(5):
-        network = nn.DataParallel(SimNet()).to(device)
+        network = nn.DataParallel(SJNET()).to(device)
 
         fold_done_flag = False
         test_threshold = TEST_THRESHOLD

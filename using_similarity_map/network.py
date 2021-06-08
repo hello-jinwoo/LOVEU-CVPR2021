@@ -208,7 +208,8 @@ class CustomEncoder(nn.Module):
         return event_out, shot_out, whole_out
 
 
-class SimNet(nn.Module):
+# Temporary name for the network
+class SJNET(nn.Module):
     def __init__(self, encoder_hidden=ENCODER_HIDDEN, channel_num=CHANNEL_NUM, decoder_hidden=DECODER_HIDDEN):
         super().__init__()
         self.encoder = CustomEncoder(encoder_hidden, channel_num)
