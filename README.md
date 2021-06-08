@@ -2,7 +2,7 @@
 
 This is the code for track 1 of competition LOVEU@CVPR2021.
 
-We have two main models. One of them is $MODEL_NAME_1$ using similarity map, and the other one is $MODEL_NAME_2$ using comparably simple networks.(transformer, RNN, and CNN)
+We have two main models. One of them is *main* using similarity map, and the other one is *simple* using comparably simple networks.(transformer, RNN, and CNN)
 
 We provide the simple way to implement(train, validate, test using ensemble) our code below :)
 
@@ -36,7 +36,7 @@ python main.py
 ### Validate
 If you want to validate models using saved model, follow below.
 
-- $MODEL_NAME_1
+- *main*
 ```
 python validate.py --model $MODEL_NAME --fold $FOLD_NUM --sigma $SIGMA_VALUE
 ```
@@ -48,7 +48,7 @@ and you can get validation score of *f1: 0.8132, precision: 0.8023, recall: 0.82
 
 <hr>
 
-- $MODEL_NAME_2
+- *simple*
 ```
 python validate.py --model_sf $MODEL_SF_NAME --model_tsn $MODEL_TSN_NAME --sigma $SIGMA_VALUE --fold $FOLD_NUM
 ```
