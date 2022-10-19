@@ -15,7 +15,7 @@ Here, we provide our basic setup.
 - tqdm 
 
 ## Video Features
-<> You can downlaod our video feuatures [here](https://drive.google.com/drive/folders/1AJl177kLvl1YtaFBb9QmiUAQ5o5qsjq9?usp=sharing).
+<!-- You can downlaod our video feuatures [here](https://drive.google.com/drive/folders/1AJl177kLvl1YtaFBb9QmiUAQ5o5qsjq9?usp=sharing). -->
 
 You may locate feature data in 'data' folder of this repository.
 
